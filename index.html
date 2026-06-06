@@ -9,15 +9,15 @@
 
   <script>
     setTimeout(function() {
-      var referral = window.endorsely_referral || '';
+      var referral = window.endorsely_referral || 'NOTHING FOUND';
       alert('Referral ID: ' + referral);
       var stripeUrl = 'https://buy.stripe.com/8x200i7l70QgfF7fWneEo0e';
-      if (referral) {
+      if (referral !== 'NOTHING FOUND') {
         window.location.href = stripeUrl + '?client_reference_id=' + referral;
       } else {
         window.location.href = stripeUrl;
       }
-    }, 2000);
+    }, 3000);
   </script>
 
 </body>
