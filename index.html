@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Subscribe to Performance Hub</title>
+  <script src="https://cdn.endorsely.com/endorsely.js"></script>
+</head>
+<body>
+
+  <a id="subscribe-btn" href="https://buy.stripe.com/8x200i7l70QgfF7fWneEo0e">
+    Subscribe Now
+  </a>
+
+  <script>
+    setTimeout(function() {
+      var referral = window.endorsely_referral || '';
+      var stripeUrl = 'https://buy.stripe.com/8x200i7l70QgfF7fWneEo0e';
+      if (referral) {
+        document.getElementById('subscribe-btn').href = stripeUrl + '?client_reference_id=' + referral;
+      }
+    }, 1500);
+  </script>
+
+</body>
+</html>
