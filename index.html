@@ -2,23 +2,21 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Subscribe to Performance Hub</title>
-  <script src="https://cdn.endorsely.com/endorsely.js"></script>
+  <title>Redirecting...</title>
+  <script async src="https://assets.endorsely.com/endorsely.js" data-endorsely="fbf664fb-b2a5-4111-84be-76177ddbf734"></script>
 </head>
 <body>
-
-  <a id="subscribe-btn" href="https://buy.stripe.com/8x200i7l70QgfF7fWneEo0e">
-    Subscribe Now
-  </a>
 
   <script>
     setTimeout(function() {
       var referral = window.endorsely_referral || '';
       var stripeUrl = 'https://buy.stripe.com/8x200i7l70QgfF7fWneEo0e';
       if (referral) {
-        document.getElementById('subscribe-btn').href = stripeUrl + '?client_reference_id=' + referral;
+        window.location.href = stripeUrl + '?client_reference_id=' + referral;
+      } else {
+        window.location.href = stripeUrl;
       }
-    }, 1500);
+    }, 2000);
   </script>
 
 </body>
