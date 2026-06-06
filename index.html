@@ -10,6 +10,7 @@
   <script>
     setTimeout(function() {
       var referral = window.endorsely_referral || '';
+      alert('Referral ID: ' + referral);
       var stripeUrl = 'https://buy.stripe.com/8x200i7l70QgfF7fWneEo0e';
       if (referral) {
         window.location.href = stripeUrl + '?client_reference_id=' + referral;
